@@ -7,7 +7,7 @@ In this study, we derived the Homo sapiens $m^7G$ benchmark datasets from Nation
 GSM5766798 ($D_1$), GSM5766799 ($D_2$), GSM7717369($D_3$), GSM7717370 ($D_4$). Zhao et al. \cite{zhao2023qki} created the ($D_1$) and ($D_2$) datasets to predict internal $m^7G$-modified transcripts and their interactions with the RNA-binding protein Quaking (QKI), providing cell line–specific benchmarks for modeling these modifications
 
 ### 5-fold cross-validation
-In this study, we used 5-fold cross-validation, the dataset \( S \) is split into \( K \) folds, here \( K = 5\), represented as \( S_1, S_2, \dots, S_5 \).
+In this study, we used 5-fold cross-validation. The dataset **S** is split into **K** folds (here **K = 5**), represented as **S₁, S₂, …, S₅**.
 
 ### Feature Fusion Space
 Feature extraction is a crucial step in designing and extracting information patterns from biological sequences. In this work, we employed two feature encoding methods:

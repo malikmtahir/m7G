@@ -13,6 +13,7 @@ In this study, we used 5-fold cross-validation. The dataset **S** is split into 
 Feature extraction is a crucial step in designing and extracting information patterns from biological sequences. In this work, we employed two feature encoding methods:
 -	**k-mer encoding**
 - **One-hot encoding**
+
 The k-mer features were first passed through a dense layer, and then the resulting feature maps were concatenated with the CNN feature maps before further processing
 
 ### CNN Model

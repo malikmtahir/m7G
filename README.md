@@ -4,7 +4,7 @@ This repository contains resources related to the research titled **A Multi-head
 ## Proposed Framework
 ### Benchmark Dataset
 In this study, we derived the Homo sapiens $m^7G$ benchmark datasets from National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO) repository (https://www.ncbi.nlm.nih.gov/geo). These datasets consist of four cell lines data: 
-GSM5766798 ($D_1$), GSM5766799 ($D_2$), GSM7717369($D_3$), GSM7717370 ($D_4$). Zhao et al. \cite{zhao2023qki} created the ($D_1$) and ($D_2$) datasets to predict internal $m^7G$-modified transcripts and their interactions with the RNA-binding protein Quaking (QKI), providing cell line–specific benchmarks for modeling these modifications
+GSM5766798 ($D_1$), GSM5766799 ($D_2$), GSM7717369($D_3$), GSM7717370 ($D_4$). We also selected a benchmark dataset from existing studies. Specifically, we used the dataset created by Zhao et al. [2] referred to as $D_5$ in this study, which was designed to provide more comprehensive and reliable data for $m^7G$ site analysis.
 
 ### 5-fold cross-validation
 In this study, we used 5-fold cross-validation. The dataset **S** is split into **K** folds (here **K = 5**), represented as **S₁, S₂, …, S₅**.
@@ -43,6 +43,7 @@ The statistical analysis is based on the **standard error method** that computes
 The following references are utlized in the comparative analyses.
 
 [1]. Lei, R., Jia, J. and Qin, L., 2025. im7G-DCT: A two-branch strategy model based on improved DenseNet and transformer for m7G site prediction. Computational Biology and Chemistry, 118, p.108473.
+[2]. Yanxi Zhao, Junru Jin, Wenjia Gao, Jianbo Qiao, and Leyi Wei. Moss-m7g: A motif-based interpretable deep learning method for rna n7-methlguanosine site prediction. Journal of Chemical Information and Modeling, 64(15):6230–6240, 2024.
 
 # Contact details
 ## Muhammad Tahir (m.tahir-ra@uwinnipeg.ca)

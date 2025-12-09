@@ -19,7 +19,7 @@ The k-mer features were first passed through a dense layer, and then the resulti
 The **Convolutional Neural Network (CNN) with Multi-head Attention Layers** is specifically designed to capture spatial dependencies in the input data.
 
 <p align="center">
-<img src="https://github.com/malikmtahir/LOCO-m6A/blob/main/Figures/Frame_work.jpg" width="500" height="800">
+<img src="https://github.com/malikmtahir/m7G/blob/main/m7G_Arch.jpg" width="500" height="800">
 
 <p align="center">
 System model of the ensemble learning framework highlighting data, feature fusion, and model spaces

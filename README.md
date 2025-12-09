@@ -1,28 +1,22 @@
 # A Multi-head attention-based neural network for cancer-specific identification of $m^7G$ modification sites using hybrid features
-This repository contains resources related to the research titled **A Multi-head attention-based neural network for cancer-specific identification of m7G modification sites using hybrid features** In this study, we propose a computational model based on machine leanring and deep learning approches to identify m7G sites. The proposed framework is built on a detailed architecture that includes core components such as the Data Space, Machine learning and Deep learning approaches, and Feature Fusion Space.
+This repository contains resources related to the research titled **A Multi-head attention-based neural network for cancer-specific identification of $m^7G$ modification sites using hybrid features** In this study, we propose a computational model based on machine leanring and deep learning approches to identify $m^7G$ sites. $N^7$-methylguanosine ($m^7G$) is one of the most prevalent and biologically important RNA modifications. While several computational models exist for $m^7G$ site prediction in human and non-human species, none have been specifically designed to detect $m^7G$ modification sites in cancers. This study addresses this gap by developing a cancer-specific predictive framework for $m^7G$ site identification. We curated four $m^7G$ benchmark datasets from two cancer cell lines (human osteosarcoma and human hepatocellular carcinoma) from the NCBI Gene Expression Omnibus repository and included an additional benchmark dataset from m7GHub v2.0. We developed a novel multi-head attention-based convolutional neural network model (CNN-MHA-TNC) using two feature encoding methods—trinucleotide composition (TNC) and one-hot encoding (OHE). The model’s performance was compared to support vector machine (SVM), random forest (RF), XGBoost, and a 1D CNN across all five datasets. Robustness and generalizability were evaluated using 5-fold cross-validation and independent testing. Model interpretability was examined with t-SNE and SHAP analyses. The proposed CNN-MHA-TNC model achieved superior performance across all five benchmark datasets, with marked improvements in accuracy, sensitivity, specificity, Matthews correlation coefficient, and area under the receiver operating characteristic curve compared to other machine learning and deep learning models. The t-SNE and SHAP analyses provided biological insight into the feature representations and decision-making process of the model. This study presents one of the first cancer-specific computational frameworks for $m^7G$ site prediction. By combining multi-head attention with convolutional neural networks and complementary feature encoding, our approach enhances predictive power and interpretability.
 
 ## Proposed Framework
 ### Benchmark Dataset
-The m6A benchmark dataset was downloaded from m6A-TCPred, extracting 268,115 base-resolution m6A sites from the m6A-Atlas database. The sites were analyzed across 23 human tissue contexts. The positive dataset had 10,424 highly conserved methylation site sequences across human tissues, while the negative dataset had 54,949 tissue-specific site sequences.
+In this study, we derived the Homo sapiens $m^7G$ benchmark datasets from National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO) repository (https://www.ncbi.nlm.nih.gov/geo). These datasets consist of four cell lines data: 
+GSM5766798 ($D_1$), GSM5766799 ($D_2$), GSM7717369($D_3$), GSM7717370 ($D_4$). Zhao et al. \cite{zhao2023qki} created the ($D_1$) and ($D_2$) datasets to predict internal $m^7G$-modified transcripts and their interactions with the RNA-binding protein Quaking (QKI), providing cell line–specific benchmarks for modeling these modifications
 
-### Splitting Approach
-The benchmark dataset for m6A was **randomly split** into:
- - **80%** for the training dataset
-  - **20%** for the independent test dataset, ensuring m6A pairs from the same number of chromosomes.
-  
-  The **Leave-One-Chromosome-Out (LOCO)** approach split the benchmark dataset into 23 sub-datasets:
-  - Each chromosome served as the test dataset in one iteration.
-  - The remaining 22 chromosomes were used for training.  
-- The model was trained on 22 chromosomes and evaluated on the corresponding test dataset.
+### 5-fold cross-validation
+In this study, we used 5-fold cross-validation, the dataset \( S \) is split into \( K \) folds, here \( K = 5\), represented as \( S_1, S_2, \dots, S_5 \).
 
 ### Feature Fusion Space
 Feature extraction is a crucial step in designing and extracting information patterns from biological sequences. In this work, we employed two feature encoding methods:
 -	**k-mer encoding**
-- **One-hot encoding with CNN**
+- **One-hot encoding**
 The k-mer features were first passed through a dense layer, and then the resulting feature maps were concatenated with the CNN feature maps before further processing
 
 ### CNN Model
-The **Convolutional Neural Network (CNN)** is specifically designed to capture spatial dependencies in the input data.
+The **Convolutional Neural Network (CNN) with Multi-head Attention Layers** is specifically designed to capture spatial dependencies in the input data.
 
 <p align="center">
 <img src="https://github.com/malikmtahir/LOCO-m6A/blob/main/Figures/Frame_work.jpg" width="500" height="800">

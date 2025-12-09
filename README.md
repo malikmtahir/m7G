@@ -32,7 +32,7 @@ To visualize the features, we use **t-SNE** to reduce the dimensionality of the 
 
 
 ### Comparative Analyses against State-of-the-art Models
-This comparative study evaluates the developed ensemble model against the cutting-edge model **m6A-TCPred [1]** focusing on the m6A sites identification problem.
+This comparative study evaluates the developed ensemble model against the cutting-edge model **im7G-DCT [1] and ** focusing on the m6A sites identification problem.
   
 ### Statistical Analyses
 The statistical analysis is based on the **standard error method** that computes the **mean, standard deviation, critical value** (i.e., **z-score**), and **95% confidence interval** for a sample of **accuracy, sensitivity, specificity, MCC,** and **AUC-ROC**. These analyses aim to validate the quantitative results agains the **CNN** model.
@@ -41,8 +41,7 @@ The statistical analysis is based on the **standard error method** that computes
 # References 
 The following references are utlized in the comparative analyses.
 
-[1]. Tu, G., Wang, X., Xia, R. and Song, B., 2024. m6A-TCPred: a web server to predict tissue-conserved human m6A sites using machine learning approach. BMC bioinformatics, 25(1), p.127.
-
+[1]. Lei, R., Jia, J. and Qin, L., 2025. im7G-DCT: A two-branch strategy model based on improved DenseNet and transformer for m7G site prediction. Computational Biology and Chemistry, 118, p.108473.
 
 # Contact details
 ## Muhammad Tahir (m.tahir-ra@uwinnipeg.ca)

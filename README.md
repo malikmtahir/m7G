@@ -43,6 +43,7 @@ The statistical analysis is based on the **standard error method** that computes
 The following references are utlized in the comparative analyses.
 
 [1]. Lei, R., Jia, J. and Qin, L., 2025. im7G-DCT: A two-branch strategy model based on improved DenseNet and transformer for m7G site prediction. Computational Biology and Chemistry, 118, p.108473.
+
 [2]. Yanxi Zhao, Junru Jin, Wenjia Gao, Jianbo Qiao, and Leyi Wei. Moss-m7g: A motif-based interpretable deep learning method for rna n7-methlguanosine site prediction. Journal of Chemical Information and Modeling, 64(15):6230–6240, 2024.
 
 # Contact details
